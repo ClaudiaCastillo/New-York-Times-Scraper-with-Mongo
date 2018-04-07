@@ -1,0 +1,29 @@
+{
+  "name": "new-york-times-scraper-with-mongo",
+  "version": "1.0.0",
+  "description": "To Run:",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^5.0.12",
+    "request": "^2.85.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClaudiaCastillo/New-York-Times-Scraper-with-Mongo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClaudiaCastillo/New-York-Times-Scraper-with-Mongo/issues"
+  },
+  "homepage": "https://github.com/ClaudiaCastillo/New-York-Times-Scraper-with-Mongo#readme"
+}
