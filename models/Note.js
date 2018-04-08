@@ -9,10 +9,7 @@ var Schema = mongoose.Schema;
 // Create noteSchema with Schema object
 var noteSchema = new Schema({
   // headline (article associate with the note)
-  _headlineId: {
-    type: Schema.Types.ObjectId,
-    ref: "Headline"
-  },
+  headlineId: String,
   date: String,
   noteText: String
 });

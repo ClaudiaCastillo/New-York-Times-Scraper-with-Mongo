@@ -84,7 +84,7 @@ module.exports = function(router) {
     notesController.get(query, function(err, data) {
       // Send the note data back to the user as JSON
       res.json(data);
-      console.log("Routes query; ", query, "err: ", err, "data: ", data);
+      //console.log("Routes query; ", query, "err: ", err, "data: ", data);
     });
   });
 
@@ -100,7 +100,7 @@ module.exports = function(router) {
 
   // This route handles saving a new note
   router.post("/api/notes", function(req, res) {
-    console.log("post note: ", req.body);
+    //console.log("post note: ", req.body);
     notesController.save(req.body, function(data) {
       // Send the note to the browser as a json
       res.json(data);

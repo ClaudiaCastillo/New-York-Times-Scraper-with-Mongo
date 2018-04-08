@@ -4,7 +4,7 @@
 $(document).ready(function() {
   // Getting a reference to the article container div to render all articles inside of
   var articleContainer = $(".article-container");
-  console.log("buttons");
+  
   // Adding event listeners for dynamically generated buttons for deleting articles,
   // pulling up article notes, saving article notes, and deleting article notes
   $(document).on("click", ".btn.delete", handleArticleDelete);
@@ -97,7 +97,7 @@ $(document).ready(function() {
   function renderNotesList(data) {
     // function handles rendering note list items to notes modal, Setting up an array of notes to render after finished
     // Also setting up a currentNote variable to temporarily store each note
-    console.log("render notes ", data, " ", data.notes.length);
+    //console.log("render notes ", data, " ", data.notes.length);
     var notesToRender = [];
     var currentNote;
     if (!data.notes.length) {
@@ -148,11 +148,11 @@ $(document).ready(function() {
     // grab the id of the article to get notes for from the panel element the delete button sits inside
     var currentArticle = $(this).parents(".panel").data();
     // Grab any notes with this headline/article id
-    console.log("handle article notes 1 ", currentArticle._id);
+    //console.log("handle article notes 1 ", currentArticle._id);
 
     $.get("/api/notes/" + currentArticle._id).then(function(data) {
 
-      console.log("handle article notes 2 ", data);
+      //console.log("handle article notes 2 ", data);
 
       // Constructing initial HTML to add to the notes modal
       var modalText = [
